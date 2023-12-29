@@ -12,7 +12,7 @@ uvicorn~=0.24.0
 loguru~=0.7.2
 mdtex2html>=1.2.0
 latex2mathml>=3.77.0
-ngrok
+pyngrok
 
 # for openai demo
 openai>=1.4.0
