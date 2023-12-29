@@ -417,6 +417,6 @@ def contains_custom_function(value: str) -> bool:
 
 if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained(TOKENIZER_PATH, trust_remote_code=True)
-    model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").eval()
+    model = AutoModel.from_pretrained(MODEL_PATH, trust_remote_code=True, device_map="auto").half().eval()
 
     uvicorn.run(app, host='localhost', port=8000, workers=1)
